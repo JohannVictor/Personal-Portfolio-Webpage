@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html"><img src="Media/Me.jpg" alt="Profile Picture"></a>
+            <ul>
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome-section">
+            <div class="welcome-text">
+                <h1>Hey, I am Johann</h1>
+                <p>a web designer</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>These are some of my projects</h2>
+            <div class="projects-grid">
+            <div class="project-title">
+                <a href="Projects/RockClimbing/index.html" target="_blank">
+                    <img src="Media/RockClimbing.png" alt="Rock Climbing Project" width="300">
+                </a>
+                <h3>Rock Climbing</h3>
+            </div>
+            <div class="project-title">
+                <a href="Projects/Technical Documentation Page -HTML Markup/index.html" target="_blank">
+                    <img src="Media/Technical Documentation Page -HTML Markup.png" alt="Technical Documentation Page" width="300">
+                </a>
+                <h3>HTML Technical Documentation</h3>
+            </div>
+            <div class="project-title">
+                <a href="Projects/Tribute Page/index.html" target="_blank">
+                    <img src="Media/Tribute Page.png" alt="Tribute Page" width="300">
+                </a>
+                <h3>Tribute Page: Tim Berners-Lee</h3>
+            </div>
+            <div class="project-title">
+                <a href="Projects/Penguin/index.html" target="_blank">
+                    <img src="Media/Penguin.png" alt="Penguin Project" width="300">
+                </a>
+                <h3>Penguin</h3>
+            </div>
+            <div class="project-title">
+                <a href="Projects/City Skyline/index.html" target="_blank">
+                    <img src="Media/City Skyline.png" alt="City Skyline Project" width="300">
+                </a>
+                <h3>City Skyline</h3>
+            </div>
+            <div class="project-title">
+                <a href="Projects/Springbok Fantasy Club/index.html" target="_blank">
+                    <img src="Media/Springbok Fantasy Club.png" alt="Springbok Fantasy Club" width="300">
+                </a>
+                <h3>Springbok Fantasy Club</h3>
+            </div>
+            </div>
+
+            <button id="profile-link">
+                <a href="https://github.com/JohannVictor/Portfolio?tab=readme-ov-file" target="_blank">View My Github Profile</a>
+            </button>
+        </section>
+
+        <section id="contact">
+            <h2 id="contactMe">Contact Me</h2>
+            <div class="contact-methods">
+                <a href="https://www.linkedin.com/in/johann-victor-040a55180" target="_blank" class="contact-method">
+                    <img src="Media/linkedin-svgrepo-com.svg" alt="LinkedIn" width="50">
+                    <p>LinkedIn</p>
+                </a>
+                <a href="https://x.com/JohannJVictor" target="_blank" class="contact-method">
+                    <img src="Media/twitter-color-svgrepo-com.svg" alt="Twitter" width="50">
+                    <p>Twitter</p>
+                </a>
+                <a href="https://www.instagram.com/johann2181" target="_blank" class="contact-method">
+                    <img src="Media/instagram-1-svgrepo-com.svg" alt="Instagram" width="50">
+                    <p>Instagram</p>
+                </a>
+                <a href="https://github.com/JohannVictor" target="_blank" class="contact-method">
+                    <img src="Media/github-142-svgrepo-com.svg" alt="GitHub" width="50">
+                    <p>GitHub</p>
+                </a>
+                <a href="mailto:jvic85@gmail.com" target="_blank" class="contact-method">
+                    <img src="Media/gmail-svgrepo-com.svg" alt="Gmail" width="50">
+                    <p>Send email</p>
+                </a>
+                <a href="#myModal" class="contact-method">
+                    <img src="Media/smartphone-cellphone-svgrepo-com.svg" alt="Phone" width="50">
+                    <p>Call me</p>
+                </a>
+
+                <!-- The Modal HTML Structure -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <a href="#" class="close-button" id="close-modal">&times;</a>
+                        <div class="modal-header">
+                            <h2 id="contactInformation">Contact Information</h2>
+                        </div>
+                        <div class="modal-body" style="display: flex; align-items: center; gap: 1rem;">
+                            <!--<img src="Media/smartphone-cellphone-svgrepo-com.svg" alt="Phone" width="50">-->
+                            <div>
+                                <p>My Phone Number:</p>
+                                <a href="tel:+50761128941" class="text-blue-600 hover:underline text-lg font-bold transition duration-300 ease-in-out">+507 6112-8941</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <p class="text-gray-500 text-sm mt-2">Click the number to call directly.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Johann Victor. All rights reserved.</p>
+    </footer>
+</body>
+</html>
