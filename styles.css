@@ -381,6 +381,58 @@ body {
     }
 }
 
+/* Burger menu styles */
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    z-index: 1100;
+}
+
+.burger span {
+    height: 4px;
+    width: 28px;
+    background: #3C004F;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+    display: block;
+}
+
+/* Hide nav ul by default on mobile */
+@media (max-width: 700px) {
+    #navbar ul {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #000;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 180px;
+        padding: 1rem 1.5rem;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+        display: none;
+        border-radius: 0 0 0 1rem;
+    }
+    #navbar ul.active {
+        display: flex;
+    }
+    #navbar li {
+        margin: 1rem 0 0 0;
+    }
+    .burger {
+        display: flex;
+    }
+    #navbar {
+        padding: 0.5rem 1rem;
+    }
+}
+
 footer {
     background: #3C004F;
     color: #fff;

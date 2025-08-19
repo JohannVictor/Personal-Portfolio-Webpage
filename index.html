@@ -10,7 +10,12 @@
     <header>
         <nav id="navbar">
             <a href="index.html"><img src="Media/Me.jpg" alt="Profile Picture"></a>
-            <ul>
+            <div class="burger" id="burger-menu" aria-label="Open navigation" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-links">
                 <li><a href="#welcome-section">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -127,5 +132,22 @@
     <footer>
         <p>&copy; 2025 Johann Victor. All rights reserved.</p>
     </footer>
+    <script>
+// filepath: c:\Projects\Personal Portfolio Webpage\index.html
+// Burger menu toggle script
+document.addEventListener('DOMContentLoaded', function() {
+    const burger = document.getElementById('burger-menu');
+    const navLinks = document.getElementById('nav-links');
+    burger.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+    // Optional: close menu when a link is clicked (mobile UX)
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+});
+</script>
 </body>
 </html>
